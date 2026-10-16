@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная — Bootstrap Shop</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <div class="d-flex flex-column min-vh-100">
+
+    <header class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8">
+            <h1 class="h3 mb-1">Bootstrap Shop</h1>
+            <p class="mb-0 opacity-75">Учебный интернет-магазин на Bootstrap</p>
+          </div>
+          <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+            <span class="badge bg-light text-primary">КР №2</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Переключить навигацию"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Каталог</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Товар</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Заявка</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Дополнительно
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+            <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+            <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="flex-grow-1">
+
+      <section class="container my-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-6">
+            <h2 class="display-5 fw-bold">Учебный каталог товаров на Bootstrap</h2>
+            <p class="lead text-muted">
+              Проект демонстрирует использование Bootstrap-сетки,
+              адаптивных колонок и базовых utility-классов.
+            </p>
+            <a class="btn btn-primary btn-lg" href="catalog.html">Перейти в каталог</a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow-sm">
+                <img src="images/banner.png" class="img-fluid rounded promo-banner-img" alt="Промо баннер">
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Популярные товары</h2>
+          <a class="btn btn-outline-primary" href="catalog.html">Все товары</a>
+        </div>
+        <div class="row g-4">
+      <div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm position-relative">
+   <span class="badge bg-success position-absolute top-0 end-0 m-3 z-1">Новинка</span>
+
+    <div class="p-3 pb-0 text-center">
+      <img src="images/product1.jpeg" class="card-img-top rounded img-fluid" alt="Товар 1">
+    </div>
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Товар 1</h5>
+      <p class="card-text text-muted">Краткое описание первого учебного товара.</p>
+      <div class="mt-auto">
+        <p class="fw-bold fs-5 mb-2">1500 руб.</p>
+        <div class="d-flex gap-2">
+          <a href="product.html" class="btn btn-primary">Подробнее</a>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm position-relative">
+    <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 z-1">Хит</span>
+
+    <div class="p-3 pb-0 text-center">
+      <img src="images/product2.jpeg" class="card-img-top rounded img-fluid" alt="Товар 2">
+    </div>
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Товар 2</h5>
+      <p class="card-text text-muted">Краткое описание второго учебного товара.</p>
+      <div class="mt-auto">
+        <p class="fw-bold fs-5 mb-2">1500 руб.</p>
+        <div class="d-flex gap-2">
+          <a href="product.html" class="btn btn-primary">Подробнее</a>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm position-relative">
+    <span class="badge bg-danger position-absolute top-0 end-0 m-3 z-1">Скидка</span>
+    <div class="p-3 pb-0 text-center">
+      <img src="images/prosuct3.jpeg" class="card-img-top rounded img-fluid" alt="Товар 3">
+    </div>
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Товар 3</h5>
+      <p class="card-text text-muted">Краткое описание третьего учебного товара.</p>
+      <div class="mt-auto">
+        <p class="fw-bold fs-5 mb-2">1500 руб.</p>
+        <div class="d-flex gap-2">
+          <a href="product.html" class="btn btn-primary">Подробнее</a>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+      </section>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Отзывы покупателей</h2>
+
+  <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Отличный корм! Мой кот просто в восторге, шерсть блестит, ест с огромным удовольствием!»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Татьяна</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Доставка супер быстрая, упаковано отлично. Котята хрустят за обе щеки, буду заказать еще!»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Алексей</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Качество на высоте. Раньше были проблемы с пищеварением, а с этим кормом всё идеально!»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Елена К.</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="carousel-item">
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Прекрасный магазин и отличные цены. Когтеточка и корм пришли в идеальном состоянии!»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Михаил</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Взяла по рекомендации ветеринара. Кот стал намного активнее, спасибо за быструю отправку!»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Ольга</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2 text-warning">★★★★★</div>
+                <p class="card-text flex-grow-1">«Очень вежливые менеджеры, помогли подобрать корм для чувствительного желудка.»</p>
+                <div class="mt-3 pt-2 border-top">
+                  <h6 class="mb-0 fw-bold">Дмитрий</h6>
+                  <small class="text-muted">Покупатель</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+
+  </div>
+</section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-6">
+            <p class="mb-0">&copy; 2026 Bootstrap Shop. Учебный проект.</p>
+          </div>
+          <div class="col-12 col-md-6 text-md-end">
+            <a class="text-white text-decoration-none me-3" href="catalog.html">Каталог</a>
+            <a class="text-white text-decoration-none" href="order.html">Заявка</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

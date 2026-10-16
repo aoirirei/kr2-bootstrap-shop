@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар 1 — Bootstrap Shop</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="d-flex flex-column min-vh-100">
+
+  <header class="bg-primary text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+          <h1 class="h3 mb-1">Bootstrap Shop</h1>
+          <p class="mb-0 opacity-75">Учебный интернет-магазин на Bootstrap</p>
+        </div>
+        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <span class="badge bg-light text-primary">КР №2</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+              aria-expanded="false" aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Товар</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+              <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+              <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 flex-grow-1">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Каталог</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Товар 1</li>
+      </ol>
+    </nav>
+
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-6">
+        <div class="product-img-wrap card shadow-sm border-0 p-3 text-center">
+          <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Новинка</span>
+          <img src="images/product2.jpeg" class="rounded img-fluid" alt="Товар 1">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <h1 class="h2 mb-2">Товар 1</h1>
+
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="text-warning">★★★★★</span>
+          <small class="text-muted">4.9 · 124 отзыва</small>
+        </div>
+
+        <p class="lead text-muted mb-4">
+          Подробное описание учебного товара для страницы карточки.
+        </p>
+
+        <div class="d-flex align-items-baseline gap-2 mb-4">
+          <span class="product-price">1000 руб.</span>
+          <small class="text-muted">за шт.</small>
+          <span class="badge bg-success-subtle text-success ms-2">В наличии</span>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a class="btn btn-primary btn-lg" href="order.html">Оформить заявку</a>
+          <a class="btn btn-outline-secondary btn-lg" href="catalog.html">← Назад в каталог</a>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          Это учебная карточка товара. Данные используются для демонстрации Bootstrap-компонентов.
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Характеристики</h2>
+
+      <div class="card border-0 shadow-sm spec-card">
+        <div class="table-responsive">
+          <table class="table table-striped align-middle">
+            <tbody>
+              <tr>
+                <th scope="row">Категория</th>
+                <td>Учебные товары</td>
+              </tr>
+              <tr>
+                <th scope="row">Цена</th>
+                <td class="fw-semibold">1000 руб.</td>
+              </tr>
+              <tr>
+                <th scope="row">Наличие</th>
+                <td><span class="badge bg-success-subtle text-success">В наличии</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 pt-4 border-top">
+      <h3 class="mb-4">Отзывы покупателей</h3>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-column gap-3">
+
+            <div class="card border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="fw-bold mb-0">Татьяна</h6>
+                  <small class="text-muted">12 октября 2026</small>
+                </div>
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text mb-0">
+                  «Отличный корм! Мой кот просто в восторге, шерсть блестит, ест с огромным удовольствием! Заказываю уже третий раз.»
+                </p>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="fw-bold mb-0">Екатерина</h6>
+                  <small class="text-muted">8 октября 2026</small>
+                </div>
+                <div class="text-warning mb-2">★★★★☆</div>
+                <p class="card-text mb-0">
+                  «Хороший состав, котику нравится. Единственное — хотелось бы упаковку побольше объемом, а так всё супер!»
+                </p>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="fw-bold mb-0">Максим</h6>
+                  <small class="text-muted">1 октября 2026</small>
+                </div>
+                <div class="text-warning mb-2">★★★★★</div>
+                <p class="card-text mb-0">
+                  «Быстрая доставка, отличная цена. Кот уплетает за обе щеки. Рекомендую!»
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="card border-0 shadow-sm p-4 bg-light">
+            <h5 class="card-title mb-3">Оставить отзыв</h5>
+
+            <div id="successAlert" class="alert alert-success d-none mb-3" role="alert">
+              Спасибо! Ваш отзыв успешно отправлен.
+            </div>
+
+            <form id="reviewForm">
+              <div class="mb-3">
+                <label for="reviewName" class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" id="reviewName" placeholder="Введите имя" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="reviewRating" class="form-label">Оценка</label>
+                <select class="form-select" id="reviewRating">
+                  <option value="5" selected>★★★★★ (5/5)</option>
+                  <option value="4">★★★★☆ (4/5)</option>
+                  <option value="3">★★★☆☆ (3/5)</option>
+                  <option value="2">★★☆☆☆ (2/5)</option>
+                  <option value="1">★☆☆☆☆ (1/5)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="reviewText" class="form-label">Ваш комментарий</label>
+                <textarea class="form-control" id="reviewText" rows="4" placeholder="Поделитесь впечатлениями о товаре..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">Отправить отзыв</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">&copy; 2026 Bootstrap Shop. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white text-decoration-none me-3" href="catalog.html">Каталог</a>
+          <a class="text-white text-decoration-none" href="order.html">Заявка</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const alertBox = document.getElementById('successAlert');
+    alertBox.classList.remove('d-none');
+    this.reset();
+    setTimeout(function() {
+      alertBox.classList.add('d-none');
+    }, 4000);
+  });
+</script>
+
+</body>
+</html>
